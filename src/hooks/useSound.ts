@@ -2,7 +2,7 @@
    useSound — Synthetic Sound Engine using Web Audio API
    ============================================================ */
 
-import { useCallback, useRef, useEffect, useState } from 'react';
+import { useCallback, useState } from 'react';
 
 // Tarayıcı güvenlik kuralları gereği, ses bağlamı (AudioContext)
 // kullanıcı etkileşimi olmadan başlatılamaz.

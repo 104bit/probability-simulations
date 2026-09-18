@@ -3,7 +3,7 @@
    ============================================================ */
 
 import React from 'react';
-import { Infinity, Volume2, VolumeX, Beaker } from 'lucide-react';
+import { Infinity, Volume2, VolumeX } from 'lucide-react';
 import registry from '../paradoxes/registry';
 import { useSound } from '../hooks/useSound';
 

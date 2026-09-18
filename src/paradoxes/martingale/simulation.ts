@@ -14,8 +14,7 @@ export function simulateRound(
   currentBet: number,
   bankroll: number,
   winProbability: number,
-  consecutiveLosses: number,
-  baseBet: number,
+  consecutiveLosses: number
 ): RoundResult {
   const won = Math.random() < winProbability;
   const payout = won ? currentBet : -currentBet;
@@ -58,7 +57,7 @@ export function simulateSession(config: SessionConfig): SessionResult {
       break;
     }
 
-    const result = simulateRound(r, actualBet, bankroll, winProbability, consecutiveLosses, baseBet);
+    const result = simulateRound(r, actualBet, bankroll, winProbability, consecutiveLosses);
     rounds.push(result);
 
     bankroll = result.bankroll;

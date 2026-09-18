@@ -5,7 +5,7 @@
 import React, { useState, useCallback, useRef, useEffect } from 'react';
 import { 
   Play, Pause, SkipForward, RotateCcw, 
-  Snail, Rabbit, Calculator, AlertTriangle, AlertCircle, TrendingUp
+  Snail, Rabbit, Calculator, AlertTriangle
 } from 'lucide-react';
 import RouletteWheel from './RouletteWheel';
 import BankrollChart from './BankrollChart';
